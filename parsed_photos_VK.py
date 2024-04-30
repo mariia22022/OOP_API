@@ -8,7 +8,7 @@ config = configparser.ConfigParser()
 config.read('config.ini')
 access_token = config.get('Token_VK','token_VK')
 
-VK_user_id ='29494051' #input('Введите id пользователя VK')
+VK_user_id = input('Введите id пользователя VK')
 
 # вызываем метод класса YD_client для создания папки  на ЯД
 save_photos_YD.yd_client.create_folder_YD()
